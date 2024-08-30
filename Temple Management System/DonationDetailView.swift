@@ -12,6 +12,13 @@
 //  Created by Ripal Shah on 8/30/24.
 //
 
+//
+//  DonationDetailView.swift
+//  Temple Management System
+//
+//  Created by Ripal Shah on 8/30/24.
+//
+
 import SwiftUI
 import CoreData
 
@@ -144,8 +151,21 @@ struct DonationDetailView: View {
 
 struct DonationDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DonationDetailView(donation: Donation())
-            .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        // Provide a mock donation object for the preview
+        let mockDonation = Donation(context: PersistenceController.preview.container.viewContext)
+        mockDonation.donorName = "John Doe"
+        mockDonation.amount = 100.0
+        mockDonation.donationCategory = "Food"
+        mockDonation.donationType = DonationType.cash.rawValue
+        mockDonation.date = Date()
+        mockDonation.phone = "555-555-5555"
+        mockDonation.city = "New York"
+        mockDonation.state = "NY"
+        mockDonation.country = "USA"
+
+        return NavigationView {
+            DonationDetailView(donation: mockDonation)
+                .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        }
     }
 }
-
