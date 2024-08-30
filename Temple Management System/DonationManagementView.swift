@@ -11,12 +11,14 @@ import CoreData
 struct DonationManagementView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(
-        entity: Donation.entity(),
-        sortDescriptors: [NSSortDescriptor(keyPath: \Donation.date, ascending: false)]
-    ) var donations: FetchedResults<Donation>
+        sortDescriptors: [NSSortDescriptor(keyPath: \Donation.date, ascending: false)],
+        animation: .default)
+    private var donations: FetchedResults<Donation>
+    
+    @State private var showingAddDonationView = false
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             List {
                 ForEach(donations) { donation in
                     NavigationLink(destination: DonationDetailView(donation: donation)) {
@@ -28,28 +30,17 @@ struct DonationManagementView: View {
             .navigationTitle("Donation Management")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addDonation) {
+                    Button(action: { showingAddDonationView = true }) {
                         Label("Add Donation", systemImage: "plus")
                     }
                 }
             }
-        }
-    }
-
-    private func addDonation() {
-        let newDonation = Donation(context: viewContext)
-        newDonation.id = UUID()
-        newDonation.date = Date()
-        // Set other initial values if needed
-
-        do {
-            try viewContext.save()
-        } catch {
-            let nsError = error as NSError
-            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            .sheet(isPresented: $showingAddDonationView) {
+                NavigationView {
+                    DonationDetailView(donation: Donation(context: viewContext))
+                        .environment(\.managedObjectContext, viewContext)
+                }
+            }
         }
     }
 
@@ -73,3 +64,4 @@ struct DonationManagementView_Previews: PreviewProvider {
             .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
+

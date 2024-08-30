@@ -5,13 +5,6 @@
 //  Created by Ripal Shah on 8/30/24.
 //
 
-//
-//  DonationListView.swift
-//  Temple Management System
-//
-//  Created by Ripal Shah on 8/30/24.
-//
-
 import SwiftUI
 import CoreData
 
@@ -32,7 +25,7 @@ struct DonationListView: View {
                 }
                 .onDelete(perform: deleteDonations)
             }
-            .navigationTitle("Donations")
+            .navigationTitle("Donations List")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
@@ -51,12 +44,11 @@ struct DonationListView: View {
             let newDonation = Donation(context: viewContext)
             newDonation.id = UUID()
             newDonation.date = Date()
-            // Set other initial values...
+            // Set other initial values as needed
 
             do {
                 try viewContext.save()
             } catch {
-                // Handle error appropriately
                 let nsError = error as NSError
                 fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
             }
@@ -70,7 +62,6 @@ struct DonationListView: View {
             do {
                 try viewContext.save()
             } catch {
-                // Handle error appropriately
                 let nsError = error as NSError
                 fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
             }
@@ -84,3 +75,4 @@ struct DonationListView_Previews: PreviewProvider {
             .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
+

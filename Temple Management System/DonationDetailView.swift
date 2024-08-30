@@ -5,20 +5,6 @@
 //  Created by Ripal Shah on 8/30/24.
 //
 
-//
-//  DonationDetailView.swift
-//  Temple Management System
-//
-//  Created by Ripal Shah on 8/30/24.
-//
-
-//
-//  DonationDetailView.swift
-//  Temple Management System
-//
-//  Created by Ripal Shah on 8/30/24.
-//
-
 import SwiftUI
 import CoreData
 
@@ -34,7 +20,7 @@ enum DonationType: String, CaseIterable, Identifiable {
 
 struct DonationDetailView: View {
     @Environment(\.managedObjectContext) private var viewContext
-    @State private var isEditing: Bool = false
+    @Environment(\.dismiss) private var dismiss
     @State private var donorName: String
     @State private var amount: String
     @State private var donationCategory: String
@@ -65,53 +51,37 @@ struct DonationDetailView: View {
     var body: some View {
         Form {
             Section(header: Text("Donor Information")) {
-                if isEditing {
-                    TextField("Donor Name", text: $donorName)
-                    TextField("Phone", text: $phone)
-                    TextField("City", text: $city)
-                    TextField("State", text: $state)
-                    TextField("Country", text: $country)
-                } else {
-                    Text("Donor: \(donorName)")
-                    Text("Phone: \(phone)")
-                    Text("City: \(city)")
-                    Text("State: \(state)")
-                    Text("Country: \(country)")
-                }
+                TextField("Donor Name", text: $donorName)
+                TextField("Phone", text: $phone)
+                TextField("City", text: $city)
+                TextField("State", text: $state)
+                TextField("Country", text: $country)
             }
 
             Section(header: Text("Donation Details")) {
-                if isEditing {
-                    TextField("Donation Category", text: $donationCategory)
-                    Picker("Donation Type", selection: $donationType) {
-                        ForEach(DonationType.allCases) { type in
-                            Text(type.rawValue).tag(type)
-                        }
+                TextField("Donation Category", text: $donationCategory)
+                Picker("Donation Type", selection: $donationType) {
+                    ForEach(DonationType.allCases) { type in
+                        Text(type.rawValue).tag(type)
                     }
-                    .pickerStyle(SegmentedPickerStyle())
-
-                    TextField("Amount", text: $amount)
-                        .keyboardType(.decimalPad)
-                    DatePicker("Date", selection: $date, displayedComponents: .date)
-                } else {
-                    Text("Category: \(donationCategory)")
-                    Text("Type: \(donationType.rawValue)")
-                    Text("Amount: $\(amount)")
-                    Text("Date: \(formattedDate(date))")
                 }
+                .pickerStyle(SegmentedPickerStyle())
+
+                TextField("Amount", text: $amount)
+                    .keyboardType(.decimalPad)
+                DatePicker("Date", selection: $date, displayedComponents: .date)
             }
         }
         .navigationTitle("Donation Details")
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
-                if isEditing {
-                    Button("Save") {
-                        saveChanges()
-                    }
-                } else {
-                    Button("Edit") {
-                        isEditing = true
-                    }
+                Button("Save") {
+                    saveChanges()
+                }
+            }
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button("Cancel") {
+                    dismiss()
                 }
             }
         }
@@ -134,18 +104,12 @@ struct DonationDetailView: View {
         do {
             try viewContext.save()
             submissionMessage = "Donation saved successfully!"
+            dismiss()  // Dismiss the view after saving
         } catch {
             submissionMessage = "Error saving donation: \(error.localizedDescription)"
         }
 
         showSaveConfirmation = true
-        isEditing = false
-    }
-
-    private func formattedDate(_ date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        return formatter.string(from: date)
     }
 }
 
@@ -168,3 +132,7 @@ struct DonationDetailView_Previews: PreviewProvider {
         }
     }
 }
+
+
+
+

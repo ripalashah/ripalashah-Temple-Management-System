@@ -20,7 +20,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Welcome to Temple Management")
+                Text("Modules")
                     .padding()
                 
                 NavigationLink(destination: DonationManagementView()
@@ -34,7 +34,7 @@ struct ContentView: View {
                 }
                 .padding()
             }
-            .navigationTitle("Donation Management")
+            .navigationTitle("Hindu Temple of Tri-States")
         }
     }
 }

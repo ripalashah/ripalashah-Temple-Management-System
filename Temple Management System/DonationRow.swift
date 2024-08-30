@@ -5,20 +5,6 @@
 //  Created by Ripal Shah on 8/30/24.
 //
 
-//
-//  DonationRow.swift
-//  Temple Management System
-//
-//  Created by Ripal Shah on 8/30/24.
-//
-
-//
-//  DonationRow.swift
-//  Temple Management System
-//
-//  Created by Ripal Shah on 8/30/24.
-//
-
 import SwiftUI
 
 struct DonationRow: View {
@@ -57,4 +43,7 @@ struct DonationRow_Previews: PreviewProvider {
             .previewLayout(.sizeThatFits)
     }
 }
+
+
+
 

@@ -23,21 +23,32 @@ struct PersistenceController {
             }
         }
     }
-    
+
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
-        
-        // Create sample data here if needed
-        // let newDonation = Donation(context: viewContext)
-        // newDonation.someProperty = "Some Value"
-        
+
+        // Create a mock donation for preview
+        let newDonation = Donation(context: viewContext)
+        newDonation.donorName = "Sample Donor"
+        newDonation.amount = 100.0
+        newDonation.donationCategory = "Category"
+        newDonation.donationType = DonationType.cash.rawValue
+        newDonation.date = Date()
+        newDonation.phone = "123-456-7890"
+        newDonation.city = "City"
+        newDonation.state = "State"
+        newDonation.country = "Country"
+
         do {
             try viewContext.save()
         } catch {
-            fatalError("Unresolved error \(error)")
+            let nsError = error as NSError
+            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
         }
-        
+
         return result
     }()
 }
+
+
