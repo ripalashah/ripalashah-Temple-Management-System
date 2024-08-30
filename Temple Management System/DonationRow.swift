@@ -5,6 +5,20 @@
 //  Created by Ripal Shah on 8/30/24.
 //
 
+//
+//  DonationRow.swift
+//  Temple Management System
+//
+//  Created by Ripal Shah on 8/30/24.
+//
+
+//
+//  DonationRow.swift
+//  Temple Management System
+//
+//  Created by Ripal Shah on 8/30/24.
+//
+
 import SwiftUI
 
 struct DonationRow: View {
@@ -28,11 +42,5 @@ struct DonationRow: View {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
         return formatter.string(from: date)
-    }
-}
-
-struct DonationRow_Previews: PreviewProvider {
-    static var previews: some View {
-        DonationRow(donation: Donation())
     }
 }

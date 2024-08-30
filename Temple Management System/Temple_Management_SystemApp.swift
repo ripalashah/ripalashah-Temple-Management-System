@@ -3,7 +3,7 @@
 //  Temple Management System
 //
 //  Created by Ripal Shah on 8/29/24.
-//
+
 import SwiftUI
 
 @main

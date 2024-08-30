@@ -5,6 +5,13 @@
 //  Created by Ripal Shah on 8/30/24.
 //
 
+//
+//  DonationListView.swift
+//  Temple Management System
+//
+//  Created by Ripal Shah on 8/30/24.
+//
+
 import SwiftUI
 import CoreData
 
@@ -71,15 +78,9 @@ struct DonationListView: View {
     }
 }
 
-struct DonationRow: View {
-    let donation: Donation
-
-    var body: some View {
-        VStack(alignment: .leading) {
-            Text(donation.donorName ?? "Unknown Donor")
-                .font(.headline)
-            Text("Amount: \(donation.amount)")
-                .font(.subheadline)
-        }
+struct DonationListView_Previews: PreviewProvider {
+    static var previews: some View {
+        DonationListView()
+            .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }

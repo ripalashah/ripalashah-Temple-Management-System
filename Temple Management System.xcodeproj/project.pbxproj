@@ -20,6 +20,7 @@
 		7E8403C82C811B22001685C8 /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8403C72C811B22001685C8 /* ConfirmationView.swift */; };
 		7EA4AAC02C81F2F50068945A /* DonationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA4AABF2C81F2F50068945A /* DonationDetailView.swift */; };
 		7EA4AAC42C81F59C0068945A /* DonationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA4AAC32C81F59C0068945A /* DonationRow.swift */; };
+		7EA4AAC62C81FF7D0068945A /* DonationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA4AAC52C81FF7D0068945A /* DonationListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		7E8403C72C811B22001685C8 /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
 		7EA4AABF2C81F2F50068945A /* DonationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationDetailView.swift; sourceTree = "<group>"; };
 		7EA4AAC32C81F59C0068945A /* DonationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationRow.swift; sourceTree = "<group>"; };
+		7EA4AAC52C81FF7D0068945A /* DonationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,10 +112,11 @@
 				7E8403952C81198B001685C8 /* Temple_Management_SystemApp.swift */,
 				7E8403972C81198B001685C8 /* Persistence.swift */,
 				7E84039C2C81198B001685C8 /* ContentView.swift */,
+				7E8403C72C811B22001685C8 /* ConfirmationView.swift */,
 				7E8403C52C8119CF001685C8 /* DonationManagementView.swift */,
 				7EA4AABF2C81F2F50068945A /* DonationDetailView.swift */,
 				7EA4AAC32C81F59C0068945A /* DonationRow.swift */,
-				7E8403C72C811B22001685C8 /* ConfirmationView.swift */,
+				7EA4AAC52C81FF7D0068945A /* DonationListView.swift */,
 				7E84039E2C81198C001685C8 /* Assets.xcassets */,
 				7E8403A02C81198C001685C8 /* Temple_Management_System.entitlements */,
 				7E8403992C81198B001685C8 /* Temple_Management_System.xcdatamodeld */,
@@ -285,6 +288,7 @@
 				7E84039B2C81198B001685C8 /* Temple_Management_System.xcdatamodeld in Sources */,
 				7E84039D2C81198B001685C8 /* ContentView.swift in Sources */,
 				7E8403982C81198B001685C8 /* Persistence.swift in Sources */,
+				7EA4AAC62C81FF7D0068945A /* DonationListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

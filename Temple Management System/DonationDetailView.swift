@@ -5,6 +5,13 @@
 //  Created by Ripal Shah on 8/30/24.
 //
 
+//
+//  DonationDetailView.swift
+//  Temple Management System
+//
+//  Created by Ripal Shah on 8/30/24.
+//
+
 import SwiftUI
 import CoreData
 
@@ -141,3 +148,4 @@ struct DonationDetailView_Previews: PreviewProvider {
             .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
+

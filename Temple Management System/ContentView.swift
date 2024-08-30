@@ -5,6 +5,13 @@
 //  Created by Ripal Shah on 8/29/24.
 //
 
+//
+//  ContentView.swift
+//  Temple Management System
+//
+//  Created by Ripal Shah on 8/29/24.
+//
+
 import SwiftUI
 
 struct ContentView: View {
@@ -28,7 +35,7 @@ struct ContentView: View {
                 }
                 .padding()
             }
-            .navigationTitle("Donation Management")
+            .navigationTitle("Home")
         }
     }
 }
@@ -39,4 +46,5 @@ struct ContentView_Previews: PreviewProvider {
             .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
+
 

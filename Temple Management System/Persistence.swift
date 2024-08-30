@@ -5,6 +5,13 @@
 //  Created by Ripal Shah on 8/29/24.
 //
 
+//
+//  Persistence.swift
+//  Temple Management System
+//
+//  Created by Ripal Shah on 8/29/24.
+//
+
 import CoreData
 
 struct PersistenceController {
@@ -51,6 +58,4 @@ struct PersistenceController {
         }
     }
 }
-
-
 
