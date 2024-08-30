@@ -23,7 +23,6 @@ struct ContentView: View {
                 Text("Welcome to Temple Management")
                     .padding()
                 
-                // Navigation link to DonationManagementView
                 NavigationLink(destination: DonationManagementView()
                     .environment(\.managedObjectContext, viewContext)) {
                     Text("Manage Donations")
@@ -35,7 +34,7 @@ struct ContentView: View {
                 }
                 .padding()
             }
-            .navigationTitle("Home")
+            .navigationTitle("Donation Management")
         }
     }
 }
@@ -46,5 +45,6 @@ struct ContentView_Previews: PreviewProvider {
             .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
+
 
 

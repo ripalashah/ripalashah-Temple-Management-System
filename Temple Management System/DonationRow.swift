@@ -44,3 +44,17 @@ struct DonationRow: View {
         return formatter.string(from: date)
     }
 }
+
+struct DonationRow_Previews: PreviewProvider {
+    static var previews: some View {
+        let mockDonation = Donation(context: PersistenceController.preview.container.viewContext)
+        mockDonation.donorName = "Jane Doe"
+        mockDonation.amount = 200.0
+        mockDonation.donationType = "Cash"
+        mockDonation.date = Date()
+
+        return DonationRow(donation: mockDonation)
+            .previewLayout(.sizeThatFits)
+    }
+}
+

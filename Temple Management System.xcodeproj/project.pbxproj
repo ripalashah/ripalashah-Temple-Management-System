@@ -109,14 +109,14 @@
 		7E8403942C81198B001685C8 /* Temple Management System */ = {
 			isa = PBXGroup;
 			children = (
+				7E8403C72C811B22001685C8 /* ConfirmationView.swift */,
+				7E84039C2C81198B001685C8 /* ContentView.swift */,
+				7EA4AABF2C81F2F50068945A /* DonationDetailView.swift */,
+				7E8403C52C8119CF001685C8 /* DonationManagementView.swift */,
+				7EA4AAC52C81FF7D0068945A /* DonationListView.swift */,
+				7EA4AAC32C81F59C0068945A /* DonationRow.swift */,
 				7E8403952C81198B001685C8 /* Temple_Management_SystemApp.swift */,
 				7E8403972C81198B001685C8 /* Persistence.swift */,
-				7E84039C2C81198B001685C8 /* ContentView.swift */,
-				7E8403C72C811B22001685C8 /* ConfirmationView.swift */,
-				7E8403C52C8119CF001685C8 /* DonationManagementView.swift */,
-				7EA4AABF2C81F2F50068945A /* DonationDetailView.swift */,
-				7EA4AAC32C81F59C0068945A /* DonationRow.swift */,
-				7EA4AAC52C81FF7D0068945A /* DonationListView.swift */,
 				7E84039E2C81198C001685C8 /* Assets.xcassets */,
 				7E8403A02C81198C001685C8 /* Temple_Management_System.entitlements */,
 				7E8403992C81198B001685C8 /* Temple_Management_System.xcdatamodeld */,

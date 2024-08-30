@@ -151,7 +151,6 @@ struct DonationDetailView: View {
 
 struct DonationDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        // Provide a mock donation object for the preview
         let mockDonation = Donation(context: PersistenceController.preview.container.viewContext)
         mockDonation.donorName = "John Doe"
         mockDonation.amount = 100.0

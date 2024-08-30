@@ -5,13 +5,6 @@
 //  Created by Ripal Shah on 8/29/24.
 //
 
-//
-//  DonationManagementView.swift
-//  Temple Management System
-//
-//  Created by Ripal Shah on 8/29/24.
-//
-
 import SwiftUI
 import CoreData
 
@@ -47,19 +40,16 @@ struct DonationManagementView: View {
     }
 
     private func addDonation() {
-        withAnimation {
-            let newDonation = Donation(context: viewContext)
-            newDonation.id = UUID()
-            newDonation.date = Date()
-            // Set other initial values...
+        let newDonation = Donation(context: viewContext)
+        newDonation.id = UUID()
+        newDonation.date = Date()
+        // Set other initial values if needed
 
-            do {
-                try viewContext.save()
-            } catch {
-                // Handle error appropriately
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
+        do {
+            try viewContext.save()
+        } catch {
+            let nsError = error as NSError
+            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
         }
     }
 
@@ -70,7 +60,6 @@ struct DonationManagementView: View {
             do {
                 try viewContext.save()
             } catch {
-                // Handle error appropriately
                 let nsError = error as NSError
                 fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
             }
