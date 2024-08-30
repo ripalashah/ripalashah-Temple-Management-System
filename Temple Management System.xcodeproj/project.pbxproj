@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E8403962C81198B001685C8 /* Temple_Management_SystemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8403952C81198B001685C8 /* Temple_Management_SystemApp.swift */; };
+		7E8403982C81198B001685C8 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8403972C81198B001685C8 /* Persistence.swift */; };
+		7E84039B2C81198B001685C8 /* Temple_Management_System.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E8403992C81198B001685C8 /* Temple_Management_System.xcdatamodeld */; };
+		7E84039D2C81198B001685C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E84039C2C81198B001685C8 /* ContentView.swift */; };
+		7E84039F2C81198C001685C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E84039E2C81198C001685C8 /* Assets.xcassets */; };
+		7E8403A32C81198C001685C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E8403A22C81198C001685C8 /* Preview Assets.xcassets */; };
+		7E8403AD2C81198C001685C8 /* Temple_Management_SystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8403AC2C81198C001685C8 /* Temple_Management_SystemTests.swift */; };
+		7E8403B72C81198C001685C8 /* Temple_Management_SystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8403B62C81198C001685C8 /* Temple_Management_SystemUITests.swift */; };
+		7E8403B92C81198C001685C8 /* Temple_Management_SystemUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8403B82C81198C001685C8 /* Temple_Management_SystemUITestsLaunchTests.swift */; };
+		7E8403C62C8119CF001685C8 /* DonationManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8403C52C8119CF001685C8 /* DonationManagementView.swift */; };
+		7E8403C82C811B22001685C8 /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8403C72C811B22001685C8 /* ConfirmationView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E8403A92C81198C001685C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E84038A2C81198B001685C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E8403912C81198B001685C8;
+			remoteInfo = "Temple Management System";
+		};
+		7E8403B32C81198C001685C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E84038A2C81198B001685C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E8403912C81198B001685C8;
+			remoteInfo = "Temple Management System";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7E8403922C81198B001685C8 /* Temple Management System.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Temple Management System.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E8403952C81198B001685C8 /* Temple_Management_SystemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temple_Management_SystemApp.swift; sourceTree = "<group>"; };
+		7E8403972C81198B001685C8 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		7E84039A2C81198B001685C8 /* Temple_Management_System.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Temple_Management_System.xcdatamodel; sourceTree = "<group>"; };
+		7E84039C2C81198B001685C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7E84039E2C81198C001685C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E8403A02C81198C001685C8 /* Temple_Management_System.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Temple_Management_System.entitlements; sourceTree = "<group>"; };
+		7E8403A22C81198C001685C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7E8403A82C81198C001685C8 /* Temple Management SystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Temple Management SystemTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E8403AC2C81198C001685C8 /* Temple_Management_SystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temple_Management_SystemTests.swift; sourceTree = "<group>"; };
+		7E8403B22C81198C001685C8 /* Temple Management SystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Temple Management SystemUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E8403B62C81198C001685C8 /* Temple_Management_SystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temple_Management_SystemUITests.swift; sourceTree = "<group>"; };
+		7E8403B82C81198C001685C8 /* Temple_Management_SystemUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temple_Management_SystemUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7E8403C52C8119CF001685C8 /* DonationManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationManagementView.swift; sourceTree = "<group>"; };
+		7E8403C72C811B22001685C8 /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E84038F2C81198B001685C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E8403A52C81198C001685C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E8403AF2C81198C001685C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E8403892C81198B001685C8 = {
+			isa = PBXGroup;
+			children = (
+				7E8403942C81198B001685C8 /* Temple Management System */,
+				7E8403AB2C81198C001685C8 /* Temple Management SystemTests */,
+				7E8403B52C81198C001685C8 /* Temple Management SystemUITests */,
+				7E8403932C81198B001685C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E8403932C81198B001685C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E8403922C81198B001685C8 /* Temple Management System.app */,
+				7E8403A82C81198C001685C8 /* Temple Management SystemTests.xctest */,
+				7E8403B22C81198C001685C8 /* Temple Management SystemUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E8403942C81198B001685C8 /* Temple Management System */ = {
+			isa = PBXGroup;
+			children = (
+				7E8403952C81198B001685C8 /* Temple_Management_SystemApp.swift */,
+				7E8403972C81198B001685C8 /* Persistence.swift */,
+				7E84039C2C81198B001685C8 /* ContentView.swift */,
+				7E8403C52C8119CF001685C8 /* DonationManagementView.swift */,
+				7E8403C72C811B22001685C8 /* ConfirmationView.swift */,
+				7E84039E2C81198C001685C8 /* Assets.xcassets */,
+				7E8403A02C81198C001685C8 /* Temple_Management_System.entitlements */,
+				7E8403992C81198B001685C8 /* Temple_Management_System.xcdatamodeld */,
+				7E8403A12C81198C001685C8 /* Preview Content */,
+			);
+			path = "Temple Management System";
+			sourceTree = "<group>";
+		};
+		7E8403A12C81198C001685C8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7E8403A22C81198C001685C8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7E8403AB2C81198C001685C8 /* Temple Management SystemTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E8403AC2C81198C001685C8 /* Temple_Management_SystemTests.swift */,
+			);
+			path = "Temple Management SystemTests";
+			sourceTree = "<group>";
+		};
+		7E8403B52C81198C001685C8 /* Temple Management SystemUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7E8403B62C81198C001685C8 /* Temple_Management_SystemUITests.swift */,
+				7E8403B82C81198C001685C8 /* Temple_Management_SystemUITestsLaunchTests.swift */,
+			);
+			path = "Temple Management SystemUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E8403912C81198B001685C8 /* Temple Management System */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E8403BC2C81198C001685C8 /* Build configuration list for PBXNativeTarget "Temple Management System" */;
+			buildPhases = (
+				7E84038E2C81198B001685C8 /* Sources */,
+				7E84038F2C81198B001685C8 /* Frameworks */,
+				7E8403902C81198B001685C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Temple Management System";
+			productName = "Temple Management System";
+			productReference = 7E8403922C81198B001685C8 /* Temple Management System.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E8403A72C81198C001685C8 /* Temple Management SystemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E8403BF2C81198C001685C8 /* Build configuration list for PBXNativeTarget "Temple Management SystemTests" */;
+			buildPhases = (
+				7E8403A42C81198C001685C8 /* Sources */,
+				7E8403A52C81198C001685C8 /* Frameworks */,
+				7E8403A62C81198C001685C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E8403AA2C81198C001685C8 /* PBXTargetDependency */,
+			);
+			name = "Temple Management SystemTests";
+			productName = "Temple Management SystemTests";
+			productReference = 7E8403A82C81198C001685C8 /* Temple Management SystemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7E8403B12C81198C001685C8 /* Temple Management SystemUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E8403C22C81198C001685C8 /* Build configuration list for PBXNativeTarget "Temple Management SystemUITests" */;
+			buildPhases = (
+				7E8403AE2C81198C001685C8 /* Sources */,
+				7E8403AF2C81198C001685C8 /* Frameworks */,
+				7E8403B02C81198C001685C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E8403B42C81198C001685C8 /* PBXTargetDependency */,
+			);
+			name = "Temple Management SystemUITests";
+			productName = "Temple Management SystemUITests";
+			productReference = 7E8403B22C81198C001685C8 /* Temple Management SystemUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E84038A2C81198B001685C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					7E8403912C81198B001685C8 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					7E8403A72C81198C001685C8 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 7E8403912C81198B001685C8;
+					};
+					7E8403B12C81198C001685C8 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 7E8403912C81198B001685C8;
+					};
+				};
+			};
+			buildConfigurationList = 7E84038D2C81198B001685C8 /* Build configuration list for PBXProject "Temple Management System" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E8403892C81198B001685C8;
+			productRefGroup = 7E8403932C81198B001685C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E8403912C81198B001685C8 /* Temple Management System */,
+				7E8403A72C81198C001685C8 /* Temple Management SystemTests */,
+				7E8403B12C81198C001685C8 /* Temple Management SystemUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E8403902C81198B001685C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E8403A32C81198C001685C8 /* Preview Assets.xcassets in Resources */,
+				7E84039F2C81198C001685C8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E8403A62C81198C001685C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E8403B02C81198C001685C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E84038E2C81198B001685C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E8403962C81198B001685C8 /* Temple_Management_SystemApp.swift in Sources */,
+				7E8403C82C811B22001685C8 /* ConfirmationView.swift in Sources */,
+				7E8403C62C8119CF001685C8 /* DonationManagementView.swift in Sources */,
+				7E84039B2C81198B001685C8 /* Temple_Management_System.xcdatamodeld in Sources */,
+				7E84039D2C81198B001685C8 /* ContentView.swift in Sources */,
+				7E8403982C81198B001685C8 /* Persistence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E8403A42C81198C001685C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E8403AD2C81198C001685C8 /* Temple_Management_SystemTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E8403AE2C81198C001685C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E8403B72C81198C001685C8 /* Temple_Management_SystemUITests.swift in Sources */,
+				7E8403B92C81198C001685C8 /* Temple_Management_SystemUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E8403AA2C81198C001685C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E8403912C81198B001685C8 /* Temple Management System */;
+			targetProxy = 7E8403A92C81198C001685C8 /* PBXContainerItemProxy */;
+		};
+		7E8403B42C81198C001685C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E8403912C81198B001685C8 /* Temple Management System */;
+			targetProxy = 7E8403B32C81198C001685C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7E8403BA2C81198C001685C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7E8403BB2C81198C001685C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		7E8403BD2C81198C001685C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Temple Management System/Temple_Management_System.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Temple Management System/Preview Content\"";
+				DEVELOPMENT_TEAM = 2958G68JF8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HinduTenpleoftriStates.Temple-Management-System";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E8403BE2C81198C001685C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Temple Management System/Temple_Management_System.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Temple Management System/Preview Content\"";
+				DEVELOPMENT_TEAM = 2958G68JF8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HinduTenpleoftriStates.Temple-Management-System";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7E8403C02C81198C001685C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2958G68JF8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HinduTenpleoftriStates.Temple-Management-SystemTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Temple Management System.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Temple Management System";
+			};
+			name = Debug;
+		};
+		7E8403C12C81198C001685C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2958G68JF8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HinduTenpleoftriStates.Temple-Management-SystemTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Temple Management System.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Temple Management System";
+			};
+			name = Release;
+		};
+		7E8403C32C81198C001685C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2958G68JF8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HinduTenpleoftriStates.Temple-Management-SystemUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Temple Management System";
+			};
+			name = Debug;
+		};
+		7E8403C42C81198C001685C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2958G68JF8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HinduTenpleoftriStates.Temple-Management-SystemUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Temple Management System";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E84038D2C81198B001685C8 /* Build configuration list for PBXProject "Temple Management System" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E8403BA2C81198C001685C8 /* Debug */,
+				7E8403BB2C81198C001685C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E8403BC2C81198C001685C8 /* Build configuration list for PBXNativeTarget "Temple Management System" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E8403BD2C81198C001685C8 /* Debug */,
+				7E8403BE2C81198C001685C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E8403BF2C81198C001685C8 /* Build configuration list for PBXNativeTarget "Temple Management SystemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E8403C02C81198C001685C8 /* Debug */,
+				7E8403C12C81198C001685C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E8403C22C81198C001685C8 /* Build configuration list for PBXNativeTarget "Temple Management SystemUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E8403C32C81198C001685C8 /* Debug */,
+				7E8403C42C81198C001685C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7E8403992C81198B001685C8 /* Temple_Management_System.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7E84039A2C81198B001685C8 /* Temple_Management_System.xcdatamodel */,
+			);
+			currentVersion = 7E84039A2C81198B001685C8 /* Temple_Management_System.xcdatamodel */;
+			path = Temple_Management_System.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7E84038A2C81198B001685C8 /* Project object */;
+}
